@@ -37,6 +37,19 @@ export default function Home() {
           height={37}
           priority
         />
+        <div
+            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+            style={{ margin: "5rem", display: "flex", alignItems: "flex-end"}}>
+          <Image
+              src="/jpro-logo.svg"
+              alt="Jpro Logo"
+              width={90}
+              height={24}
+              priority
+          />
+          <span style={{ color: "black"}}>.FAGDAG</span>
+        </div>
+
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
