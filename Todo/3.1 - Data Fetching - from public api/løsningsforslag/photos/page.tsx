@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Photos() {
+
     type Photo = {
         id: number;
         albumId: number;
