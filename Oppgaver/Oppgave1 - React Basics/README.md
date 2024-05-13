@@ -12,7 +12,8 @@ https://react.dev/learn#components
    og er elementær for React ved oppdatering.   
 
 ## Oppgave
-1. ReactComponentExample inneholder noen enkle eksempler på state-endringer, iterering av data og input-håndtering
+1. <ReactComponentExample> finner du under src/common. Dette er en fellekomponent vi har laget.
+2. ReactComponentExample inneholder noen enkle eksempler på state-endringer, iterering av data og input-håndtering
 2. Ta src/common/ReactComponentExample.tsx i bruk i app/page.tsx med koden <ReactComponentExample/>
 3. Åpne koden i ReactComponentExample.tsx og gjør deg kjent med den.
 4. Endre på komponenten og se hva som skjer. Feks: 
