@@ -7,9 +7,8 @@ https://nextjs.org/docs/app/building-your-application/routing
 For React finnes det flere biblioteker man kan importere for å håndtere routing(navigasjon).
 Mest brukt er ReactRouter. 
 I Next.js inkluderer standard to løsninger for routing, App Router og Pages Router. 
-For enkelhets skyld, vil vi i denne workshop ta for oss App Router.
-
-Pages Router er noe mer kompleks, men har gir også flere muligheter.
+For enkelhets skyld, vil vi i denne workshop ta for oss App Router. 
+Har du likevel lyst til å teste ut Pages Router, er det ikke noe problem å kombinere denne med App Router i koden. 
 
 <LinksContainer> og <BackButton> finner du under src/common. Dette er fellekomponenter vi har laget.
 De er lagt under src/common fordi de potensielt skal brukes flere steder. Da er det en god praksis
