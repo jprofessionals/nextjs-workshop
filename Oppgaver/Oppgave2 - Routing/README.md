@@ -23,4 +23,4 @@ https://nextjs.org/docs/app/building-your-application/routing
    - Plasser den rette etter koden <p>Linker her: </p>
 5. Sjekk at navigasjon fungerer mellom disse to routes. 
 6. <BackButton> rendrer en tilbake-knapp. Ta i bruk BackButton i stedet for tilbake-knappen du akkurat laget.
-   (<BackButton> kan du legge til i alle routes du oppretter i de kommende oppgavene)
+ 

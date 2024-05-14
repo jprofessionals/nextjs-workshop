@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
+import BackButton from "@/src/common/BackButton";
+import Image from "next/image";
 
-export default function Photos() {
+export default function Oppgave4() {
 
     type Photo = {
         id: number;
@@ -24,16 +26,20 @@ export default function Photos() {
     }
 
     useEffect(() => {
-       fetchData();
+        fetchData();
     }, []);
 
 
     return (
         <main>
             <div>Antall bilder: {photos?.length}</div>
+            <BackButton/>
 
-            {photos?.map(photo =>
-                <img key={photo.id} src={photo.thumbnailUrl} alt={photo.title}/>
+            {photos?.slice(0, 5).map(photo =>
+                <>
+                    <Image src={photo.thumbnailUrl} width="150" height="150" alt={photo.title}/>
+                    <img key={photo.id} src={photo.thumbnailUrl} alt={photo.title}/>
+                </>
             )}
         </main>
     );

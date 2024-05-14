@@ -1,11 +1,14 @@
 ## Data Fetching - Vercel PostgreSQL
 
 ## Dokumentasjon
-https://vercel.com/guides/using-databases-with-vercel
 https://nextjs.org/docs/app/building-your-application/rendering/server-components
+https://vercel.com/guides/using-databases-with-vercel
 
 ## Tips
-* ikke bruk tid på styling i denne oppgaven, det kommer senere.
+* Som standard, er komponenter Server Component.
+  - Det er dermed ikke nødvendig å spesifisere ytterligere at dette skal være en Server Component.
+  - Ettersom denne rendres server-side, har komponenten begrenset mulighet for bruker-interaksjon. Se dokumentasjon.
+  -  
 * For anledningen har vi opprettet et Postgres-database "nextjs-workshop" på jpro sin Vercel-konto:
    - https://vercel.com/jp-ro/~/stores
    - Velg nextjs-workshop for ytterligere detaljer. 
@@ -20,9 +23,9 @@ https://nextjs.org/docs/app/building-your-application/rendering/server-component
    (sjekk at mappen .vercel er opprettet i rot av prosjektet)
 
 2. Kopier filen .env.local til prosjektets rot-mappe   
-3. Lag en ny route "cars" under "app", med en tom page.tsx
-4. Skriv denne route som en Server Component
-5. I page.tsx:
+3. Lag en ny route app/oppgave5
+4. Denne route skal skrives som en Server Component
+5. For å select mot databse i page.tsx:
    - import { sql } from "@vercel/postgres";
    - Bruk sql til å gjøre `SELECT id, brand, image_url from cars`
    - Rendre alle biler fra databasen og presenter "brand" og "image_url" (som et bilde).
