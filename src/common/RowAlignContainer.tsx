@@ -13,10 +13,10 @@ export class RowAlignContainer extends Component<{ children: ReactNode, border: 
                 {
                     display: "flex",
                     gap: "2rem",
-                    border: border ? "2px solid silver" : "",
-                    padding: "0.5rem 0.9rem",
+                    border: border ? "2px solid #89ce7ecf" : "",
+                    padding: border ? "1rem" : "0.5rem 0.9rem",
                     borderRadius: "0.7rem",
-                    flexWrap: "wrap"
+                    flexWrap: "wrap",
                 }
             }>
                 {children}
