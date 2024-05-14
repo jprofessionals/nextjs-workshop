@@ -37,7 +37,7 @@ export default function Oppgave4() {
 
             {photos?.slice(0, 5).map(photo =>
                 <>
-                    <Image src={photo.thumbnailUrl} width="150" height="150" alt={photo.title}/>
+                    <Image src={photo.thumbnailUrl} width={150} height={150} alt={photo.title}/>
                     <img key={photo.id} src={photo.thumbnailUrl} alt={photo.title}/>
                 </>
             )}

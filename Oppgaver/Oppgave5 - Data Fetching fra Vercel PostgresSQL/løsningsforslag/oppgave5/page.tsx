@@ -9,7 +9,7 @@ export default async function Oppgave5(){
             {rows.map((row) => (
                 <div key={row.id}>
                     {row.brand}
-                    <Image src={row.image_url} width={200} alt={`Image of ${row.brand} car`}/>
+                    <Image src={row.image_url} width={500} height={500} alt={`Image of ${row.brand} car`}/>
                 </div>
             ))}
         </div>
