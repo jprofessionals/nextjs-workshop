@@ -3,6 +3,7 @@
 ## Dokumentasjon
 https://nextjs.org/docs/app/building-your-application/rendering/client-components
 https://nextjs.org/docs/app/building-your-application/data-fetching
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 https://nextjs.org/docs/pages/api-reference/components/image
 
 ## Tips.
