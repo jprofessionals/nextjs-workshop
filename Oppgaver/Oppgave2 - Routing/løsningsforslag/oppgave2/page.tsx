@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import BackButton from "@/src/common/BackButton";
 
-export default function RouteOne() {
+export default function Oppgave2() {
     const router = useRouter();
 
     const handleBack = () => {
@@ -12,10 +12,12 @@ export default function RouteOne() {
 
     return (
         <main>
-            <h1>Route one</h1>
+            <h1>Oppgave 2</h1>
+
             <div>
                 <button onClick={handleBack}>Tilbake</button>
             </div>
+
             <div>
                 <BackButton/>
             </div>

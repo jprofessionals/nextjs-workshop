@@ -27,3 +27,6 @@ https://nextjs.org/docs/app/building-your-application/rendering/server-component
    - Bruk sql til å gjøre `SELECT id, brand, image_url from cars`
    - Rendre alle biler fra databasen og presenter "brand" og "image_url" (som et bilde).
 
+
+<Image>
+"ESLint: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element(@next/next/no-img-element)"
