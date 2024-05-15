@@ -1,7 +1,7 @@
 'use client';
 
-import BackButton from "@/src/common/BackButton";
-import {RowAlignContainer} from "@/src/common/RowAlignContainer";
+import BackButton from "@/src/common/back-button/BackButton";
+import {RowAlignContainer} from "@/src/common/row-align-container/RowAlignContainer";
 import React from "react";
 
 export default function NesteNivaa() {

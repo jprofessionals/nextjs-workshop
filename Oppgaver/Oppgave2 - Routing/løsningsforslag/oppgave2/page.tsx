@@ -1,9 +1,9 @@
 'use client';
 
-import BackButton from "@/src/common/BackButton";
+import BackButton from "@/src/common/back-button/BackButton";
 import Link from "next/link";
 import React from "react";
-import {RowAlignContainer} from "@/src/common/RowAlignContainer";
+import {RowAlignContainer} from "@/src/common/row-align-container/RowAlignContainer";
 import {useRouter} from "next/navigation";
 
 export default function Oppgave2() {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {RowAlignContainer} from "@/src/common/RowAlignContainer";
+import {RowAlignContainer} from "@/src/common/row-align-container/RowAlignContainer";
 import React from "react";
 
 export default function Home() {

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
-import BackButton from "@/src/common/BackButton";
+import BackButton from "@/src/common/back-button/BackButton";
 import Image from "next/image";
 
 export default function Oppgave4() {
