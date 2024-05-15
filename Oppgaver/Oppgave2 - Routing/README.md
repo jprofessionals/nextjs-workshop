@@ -23,4 +23,8 @@ https://nextjs.org/docs/app/building-your-application/routing
    - Plasser den rette etter koden <p>Linker her: </p>
 5. Sjekk at navigasjon fungerer mellom disse to routes. 
 6. <BackButton> rendrer en tilbake-knapp. Ta i bruk BackButton i stedet for tilbake-knappen du akkurat laget.
- 
+7. Vi skal nå opprette en ny route, under den route vi akkurat har opprettet. 
+8. Lag en ny mappe, under mappen "oppgave2". Navngi den selv. mappenavnet vil bli url til denne route
+9. Opprett en fil page.tsx i den nye mappen. Legg til noe tekst i den og <BackButton/>
+10. I filen app/oppgave2/page.txt Legg til en link til den nye route. Feks:  <Link href="/oppgave2/nesteNivaa">Link til neste nivå</Link>
+11. Test at du nå kan navigere flere nivå den i appen din og tilbake igjen. 

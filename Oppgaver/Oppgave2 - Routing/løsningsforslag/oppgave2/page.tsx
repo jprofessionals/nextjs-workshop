@@ -1,7 +1,10 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import BackButton from "@/src/common/BackButton";
+import Link from "next/link";
+import React from "react";
+import {RowAlignContainer} from "@/src/common/RowAlignContainer";
+import {useRouter} from "next/navigation";
 
 export default function Oppgave2() {
     const router = useRouter();
@@ -10,17 +13,15 @@ export default function Oppgave2() {
         router.back();
     }
 
+
     return (
         <main>
             <h1>Oppgave 2</h1>
-
-            <div>
-                <button onClick={handleBack}>Tilbake</button>
-            </div>
-
-            <div>
+            <RowAlignContainer border={false}>
                 <BackButton/>
-            </div>
+                <button onClick={handleBack}>Tilbake</button>
+                <Link href="/oppgave2/nesteNivaa">Link til neste nivå</Link>
+            </RowAlignContainer>
         </main>
     );
 }
