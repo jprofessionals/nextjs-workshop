@@ -20,11 +20,12 @@ https://react.dev/learn#components
    - Denne verdi skal være unik og er viktig for React ved rerender liste-data.   
 
 ## Oppgave
-1. <ReactComponentExample> finner du under src/common. Dette er en fellekomponent vi har laget.
-2. ReactComponentExample inneholder noen enkle eksempler på state-endringer, iterering av data og input-håndtering
-3. Legg til <ReactComponentExample/> i src/common/ReactComponentExample.tsx (denne må importeres).
-4. Åpne koden i ReactComponentExample.tsx og orienter deg med hvordan den fungerer. 
-5. Endre komponenten som du selv vil. se hva som skjer. Feks: 
+1. Ta i bruk <ReactComponentExample/> i app/page.tsx.
+   - Dette er en fellekomponent vi har laget. Den inneholder noen enkle eksempler på state-endringer, 
+     iterering av data og input-håndtering.
+   - Den må importeres fra src/common.
+2. Åpne koden i ReactComponentExample.tsx og orienter deg med hvordan den fungerer. 
+3. Endre komponenten som du selv vil. se hva som skjer. Feks: 
    - Endre useEffect til å trigge når nullstill-knapp trykkes. Legg inn alert i useEffect som vises når den trigges. 
    - Legg til en fjern-knapp for hver tekst som listes ut. 
 

@@ -38,3 +38,4 @@ https://nextjs.org/docs/pages/api-reference/components/image
    - Ta i bruk <Image> i stedet for <img>
    - Test gjerne forskjellig størrelser på bilder, ev andre funksjoner Image tilbyr.  
 
+
