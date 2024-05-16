@@ -17,14 +17,24 @@ https://nextjs.org/docs/app/building-your-application/routing
 ## Oppgave
 1. Opprett en ny route "oppgave2", under app. 
 2. Dette gjøres ved å opprette en mappe app/oppgave2, og en fil page.tsx i denne.
-3. Koden i app/oppgave2/page.tsx skal rendre en knapp med tittel "Tilbake". Klikk på denne skal resultere i navigasjon tilbake.
-4. Modifiser så app/page.tsx. 
+3. Start med å legge til følgende kode i page.tsx:
+   
+   export default function Oppgave2() {
+     return (
+       <main>
+        ...
+       </main>
+     );
+   }
+   
+4. Koden i app/oppgave2/page.tsx skal rendre en knapp med tittel "Tilbake". Klikk på denne skal resultere i navigasjon tilbake. 
+5. Modifiser så app/page.tsx. 
    - Opprett en ny Link til "app/oppgave2". 
    - Plasser den rette etter koden <p>Linker her: </p>
-5. Sjekk at navigasjon fungerer mellom disse to routes. 
-6. <BackButton> rendrer en tilbake-knapp. Ta i bruk BackButton i stedet for tilbake-knappen du akkurat laget.
-7. Vi skal nå opprette en ny route, under den route vi akkurat har opprettet. 
-8. Lag en ny mappe, under mappen "oppgave2". Navngi den selv. mappenavnet vil bli url til denne route
-9. Opprett en fil page.tsx i den nye mappen. Legg til noe tekst i den og <BackButton/>
-10. I filen app/oppgave2/page.txt Legg til en link til den nye route. Feks:  <Link href="/oppgave2/nesteNivaa">Link til neste nivå</Link>
-11. Test at du nå kan navigere flere nivå den i appen din og tilbake igjen. 
+6. Sjekk at navigasjon fungerer mellom disse to routes.
+7. <BackButton> rendrer en tilbake-knapp. Ta i bruk BackButton i stedet for tilbake-knappen du akkurat laget.
+8. Vi skal nå opprette en ny route, under den route vi akkurat har opprettet. 
+9. Lag en ny mappe, under mappen "oppgave2". Navngi den selv. mappenavnet vil bli url til denne route
+10. Opprett en fil page.tsx i den nye mappen. Legg til noe tekst i den og <BackButton/>
+11. I filen app/oppgave2/page.txt Legg til en link til den nye route. Feks:  <Link href="/oppgave2/nesteNivaa">Link til neste nivå</Link>
+12. Test at du nå kan navigere flere nivå den i appen din og tilbake igjen. 
