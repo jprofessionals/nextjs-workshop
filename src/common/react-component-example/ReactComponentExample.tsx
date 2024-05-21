@@ -1,6 +1,8 @@
 'use client';
+
+import styles from './styles.module.css'
 import React, {ChangeEvent, useEffect, useState} from "react";
-import {RowAlignContainer} from "@/src/common/RowAlignContainer";
+import {RowAlignContainer} from "@/src/common/row-align-container/RowAlignContainer";
 
 
 export default function ReactComponentExample (){
@@ -33,38 +35,25 @@ export default function ReactComponentExample (){
         setDidMount(true);
     }, []);
 
-    const styles = {
-        button: {
-            backgroundColor: "silver",
-            color: "black",
-            padding: "0.5rem",
-            borderRadius: "0.3rem"
-        },
-        input: {
-            backgroundColor: "white",
-            color: "black",
-            padding: "0.3rem",
-            borderRadius: "0.3rem",
-            margin: "0 0.5rem"
-        },
-        row: {
-            padding: "1rem 0.5rem",
-            borderBottom: "1px solid silver"
-        }
-    }
 
     return (
         <RowAlignContainer border={false}>
             <div>
                 <RowAlignContainer border={true}>
-                    Did mount : {didMount ? "ja" : "nei"}
+                    <span data-testid="mount-status">
+                        Did mount : {didMount ? "ja" : "nei"}
+                    </span>
                 </RowAlignContainer>
             </div>
 
             <div>
                 <RowAlignContainer border={true}>
-                    <button style={styles.button} onClick={handleAddCount}>Tell opp ({count})</button>
-                    <button style={styles.button} onClick={handleResetCount}>Nullstill</button>
+                    <button data-testid="count-button" className={styles.button} onClick={handleAddCount}>
+                        Tell opp ({count})
+                    </button>
+                    <button data-testid="clear-button" className={styles.button} onClick={handleResetCount}>
+                        Nullstill
+                    </button>
                 </RowAlignContainer>
             </div>
 
@@ -72,8 +61,8 @@ export default function ReactComponentExample (){
                 <RowAlignContainer border={true}>
                     <div>
                         <span>Tekst:</span>
-                        <input value={name} onChange={handleNameChange} style={styles.input}/>
-                        <button onClick={handleAddName} disabled={name.length === 0} style={styles.button}>
+                        <input value={name} onChange={handleNameChange} className={styles.input}/>
+                        <button onClick={handleAddName} disabled={name.length === 0} className={styles.button}>
                             Legg til
                         </button>
 
@@ -81,7 +70,7 @@ export default function ReactComponentExample (){
                             <>
                                 <br/>
                                 {names.map((name, index) => (
-                                    <div key={name} style={styles.row}>
+                                    <div key={name} className={styles.row}>
                                         Tekst-{index+1} : {name}
                                     </div>
                                 ))}

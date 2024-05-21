@@ -1,0 +1,17 @@
+.button {
+    background-color: silver;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+.input {
+    background-color: white;
+    color: black;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+}
+.row {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid silver;
+}
