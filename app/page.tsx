@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import {RowAlignContainer} from "@/src/common/row-align-container/RowAlignContainer";
-// import ReactComponentExample from "@/src/common/react-component-example/ReactComponentExample";
-import Link from "next/link";
+ import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,7 +32,6 @@ export default function Home() {
         Workshop stil
       </div>
 
-      {/* <ReactComponentExample/> */}
 
       <RowAlignContainer border={true}>
         <p>Linker her: </p>
