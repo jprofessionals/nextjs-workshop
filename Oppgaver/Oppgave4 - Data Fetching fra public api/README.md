@@ -20,20 +20,20 @@ https://nextjs.org/docs/pages/api-reference/components/image
 ## Oppgave 
 1. Opprett en ny route "app/oppgave4/page.txt".
 2. Denne skal skrives som en Client Component.
-2. I page.tsx, skriv en kodesnutt som fetcher data fra https://jsonplaceholder.typicode.com/photos ved render.
-3. Dataen fra api har følgende props:
+3. I page.tsx, skriv en kodesnutt som fetcher data fra https://jsonplaceholder.typicode.com/photos ved render.
+4. Dataen fra api har følgende props:
      - id: number;
      - albumId: number;
      - title: string;
      - url: string;
      - thumbnailUrl: string;
   Skriv en type med disse props og ta den i bruk i de følgende stegene. 
-4. Utvid komponenten til å presentere antall bilder. 
-5. Utvid komponenten til å vise de 5 første bildene i array. Bruk <img /> -tag og src={thumbnailUrl} for å rendre bilde.
+5. Utvid komponenten til å presentere antall bilder. 
+6. Utvid komponenten til å vise de 5 første bildene i array. Bruk <img /> -tag og src={thumbnailUrl} for å rendre bilde.
    (du vil antakelig få en lint-warn på denne. Dette kommer vi tilbake til)
-6. I app/page.tsx, legg til en <Link> til app/oppgave4
-7. I route app/oppgave4, Legg til <BackButton>
-8. Ref. punkt 5. 
+7. I app/page.tsx, legg til en <Link> til app/oppgave4
+8. I route app/oppgave4, Legg til <BackButton>
+9. Ref. punkt 5. 
    - Kopier next.config.mjs til rotmappen. 
    - Ta i bruk <Image> i stedet for <img>
    - Test gjerne forskjellig størrelser på bilder, ev andre funksjoner Image tilbyr.  
