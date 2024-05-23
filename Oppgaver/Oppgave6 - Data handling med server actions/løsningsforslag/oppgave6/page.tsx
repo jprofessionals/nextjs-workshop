@@ -3,9 +3,9 @@ import {SubmitButton} from "./submit-button";
 
 export default function Oppgave6() {
 
-    const handleSubmit = async (fromData: FormData) => {
+    const handleSubmit = async (formData: FormData) => {
         'use server'
-        console.log('Album ID: ', fromData.get('album'))
+        console.log('Album ID: ', formData.get('album'))
     }
 
     return (
