@@ -25,8 +25,9 @@ https://nextjs.org/docs/app/building-your-application/testing/cypress
 7. Velg Chrome og trykk "Start Component Testing in Chrome"
 8. Se om noen tester kjører. 
    - Vi har skrevet 2 tester for ReactComponentExample.tsx
-   - Sjekk filen src/common/react-component-example/ReactComponentExample.cypres.tsx.
- 9. Utvid ReactComponentExample.cypres.tsx til å teste ReactComponentExample.tsx sin funksjonalitet for å legge til tekst.
+   - Sjekk filen src/common/react-component-example/ReactComponentExample.cy.tsx.
+ 9. Utvid ReactComponentExample.cy.tsx til å teste ReactComponentExample.tsx sin funksjonalitet for å legge til tekst.
    - Testen skal fylle ut input med en verdi
    - trykke på knappen "Legg til"
    - Telle at antall tekster er 1. 
+10. Utvid komponenten ReactComponentExample.tsx med funksjonalitet etter eget ønske og sørg for at den har test-dekning. 
