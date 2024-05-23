@@ -17,6 +17,7 @@
 }
 
 body {
+  padding: 2rem;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +31,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.workshop {
+  color: #de5e0e;
+  margin: 3rem 0;
+  font-size: xxx-large;
+  border-bottom: 3px solid white;
 }

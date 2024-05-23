@@ -1,6 +1,5 @@
 import {SubmitButton} from "@/app/oppgave3/submit-button";
 
-
 export default function Oppgave3() {
 
     return (

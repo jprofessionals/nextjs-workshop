@@ -22,15 +22,17 @@ https://nextjs.org/docs/app/building-your-application/styling
    - https://nextjs.org/docs/app/building-your-application/styling/css-modules#css-modules
    - Forsøk gjerne å endre på stilene og kombinere flere stil-klasser.
 2. Tailwind CSS
-   - Definer en ny stilklasse "workshop" i app/globals.css og definer en unik stil for denne. 
-   - I app/page.tsx, legg til <div className="workshop">Workshop stil</div> og se at denne får stilen definert i globals css. 
+   - Vi har definert stilklassen ".workshop" i app/globals.css og gitt den en tekst-farge. 
+   - Denne brukes i app/page.tsx. 
    - Opprett en ny route app/oppgave8/page.tsx.
-   - Legg til <span>Oppgave 8</span>, <BackButton /> og <div className="workshop">Workshop stil</div> i page.tsx
+   - Legg til <span>Oppgave 8</span>, <BackButton /> og <div className="workshop">Workshop stil</div> i app/oppgave8/page.tsx
    - Opprett en Link til oppgave8 fra app/page.tsx
    - Naviger til oppgave8 via linken og se at stil er lik for "workshop" begge steder.
-   - I app/oppgave8, opprett en ny fil globals.css. Definer stilklassen "workshop" på nytt her, med en ny, unik stil. 
-   - legg til import "./globals.css"; i app/oppgave8/page.css og se at stilen endrer seg for "workshop".
-   - Denne gjelder nå for alle komponenter under app/oppgave8
+   - I app/oppgave8, opprett en ny fil style.modules.css. Definer stilklassen ".workshopOverride" her.
+     - legg til noen særegne stiler i denne filen, som skiller seg fra den definert i globals.css. 
+   - Importer style.module.css i app/oppgave8/page.css.
+     - Endre på prop className, slik at dette elementet får stil fra både "workshop" og "workshopOverride".
+   - Lag gjerne noen andre stiler også og ta de i bruk på diverse. 
 3. Det er også mulig å bruke inline-styling med style-prop. Test dette ut.
    - <div style={{ backgroundColor: "blue"}}> Workshop stil</div>
 
