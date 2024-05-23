@@ -1,4 +1,4 @@
-/*import React from 'react'
+import React from 'react'
 import ReactComponentExample from './ReactComponentExample'
 
 describe('<ReactComponentExample />', () => {
@@ -26,4 +26,4 @@ describe('<ReactComponentExample />', () => {
     cy.get('[data-testid="add-button"]').click();
     cy.get('[data-testid="texts-container"]').contains('Tekst-1 : cypress add text');
   })
-})*/
+})
