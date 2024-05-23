@@ -1,5 +1,6 @@
 'use client';
 
+import styles from './styles.module.css'
 import { useRouter } from 'next/navigation';
 
 export default function BackButton() {
@@ -10,6 +11,11 @@ export default function BackButton() {
     }
 
     return (
-        <button onClick={handleBack}>[ Tilbake ]</button>
+        <button
+            onClick={handleBack}
+            className={styles.backButton}
+        >
+             Tilbake
+        </button>
     );
 }

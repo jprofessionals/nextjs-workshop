@@ -1,3 +1,6 @@
 .backButton {
-    border: 1px solid red
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    margin: 0.5rem;
+    background-color: rgba(220, 4, 184, 0.92);
 }
