@@ -18,4 +18,12 @@ describe('<ReactComponentExample />', () => {
     cy.get('[data-testid="clear-button"]').click();
     cy.get('[data-testid="count-button"]').contains('(0)');
   })
+
+  it('text add', () => {
+    // see: https://on.cypress.io/mounting-react
+    cy.mount(<ReactComponentExample />)
+    cy.get('[data-testid="text-input"]').type('cypress add text');
+    cy.get('[data-testid="add-button"]').click();
+    cy.get('[data-testid="texts-container"]').contains('Tekst-1 : cypress add text');
+  })
 })*/
