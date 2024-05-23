@@ -25,7 +25,7 @@ https://nextjs.org/docs/pages/api-reference/components/image
 2. Kopier filen .env.local til prosjektets rot-mappe   
 3. Lag en ny route app/oppgave5
 4. Denne route skal skrives som en Server Component
-5. For å select mot databse i page.tsx:
+5. For å select mot database i page.tsx:
    - import { sql } from "@vercel/postgres";
    - Bruk sql til å gjøre `SELECT id, brand, image_url from cars`
    - Rendre alle biler fra databasen og presenter "brand" og "image_url" i <Image> -tag.
