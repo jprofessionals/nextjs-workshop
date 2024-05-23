@@ -18,5 +18,4 @@ describe('<ReactComponentExample />', () => {
     cy.get('[data-testid="clear-button"]').click();
     cy.get('[data-testid="count-button"]').contains('(0)');
   })
-
 })

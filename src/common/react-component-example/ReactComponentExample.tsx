@@ -6,7 +6,6 @@ import {RowAlignContainer} from "@/src/common/row-align-container/RowAlignContai
 
 
 export default function ReactComponentExample (){
-
     const [didMount, setDidMount] = useState<boolean>(false);
     const [count, setCount] = useState<number>(0);
     const [name, setName] = useState<string>("");
@@ -37,50 +36,52 @@ export default function ReactComponentExample (){
 
 
     return (
-        <RowAlignContainer border={false}>
-            <div>
-                <RowAlignContainer border={true}>
-                    <span data-testid="mount-status">
-                        Did mount : {didMount ? "ja" : "nei"}
-                    </span>
-                </RowAlignContainer>
-            </div>
+        <>
+            <RowAlignContainer border={false}>
+                <div>
+                    <RowAlignContainer border={true}>
+                        <span data-testid="mount-status">
+                            Did mount : {didMount ? "ja" : "nei"}
+                        </span>
+                    </RowAlignContainer>
+                </div>
 
-            <div>
-                <RowAlignContainer border={true}>
-                    <button data-testid="count-button" className={styles.button} onClick={handleAddCount}>
-                        Tell opp ({count})
-                    </button>
-                    <button data-testid="clear-button" className={styles.button} onClick={handleResetCount}>
-                        Nullstill
-                    </button>
-                </RowAlignContainer>
-            </div>
-
-            <div>
-                <RowAlignContainer border={true}>
-                    <div>
-                        <span>Tekst:</span>
-                        <input value={name} onChange={handleNameChange} className={styles.input}/>
-                        <button onClick={handleAddName} disabled={name.length === 0} className={styles.button}>
-                            Legg til
+                <div>
+                    <RowAlignContainer border={true}>
+                        <button data-testid="count-button" className={styles.button} onClick={handleAddCount}>
+                            Tell opp ({count})
                         </button>
+                        <button data-testid="clear-button" className={styles.button} onClick={handleResetCount}>
+                            Nullstill
+                        </button>
+                    </RowAlignContainer>
+                </div>
 
-                        {names.length > 0 && (
-                            <>
-                                <br/>
-                                {names.map((name, index) => (
-                                    <div key={name} className={styles.row}>
-                                        Tekst-{index+1} : {name}
-                                    </div>
-                                ))}
-                                <br/>
-                            </>
-                        )}
-                    </div>
-                </RowAlignContainer>
-            </div>
+                <div>
+                    <RowAlignContainer border={true}>
+                        <div>
+                            <span>Tekst:</span>
+                            <input data-testid="text-input" value={name} onChange={handleNameChange} className={styles.input}/>
+                            <button data-testid="add-button" onClick={handleAddName} disabled={name.length === 0} className={styles.button}>
+                                Legg til
+                            </button>
 
-        </RowAlignContainer>
+                            {names.length > 0 && (
+                                <div data-testid="texts-container">
+                                    <br/>
+                                    {names.map((name, index) => (
+                                        <div key={name} className={styles.row}>
+                                            Tekst-{index+1} : {name}
+                                        </div>
+                                    ))}
+                                    <br/>
+                                </div>
+                            )}
+                        </div>
+                    </RowAlignContainer>
+                </div>
+            </RowAlignContainer>
+            <br/>
+        </>
     );
 }
