@@ -1,16 +1,15 @@
 import { sql } from "@vercel/postgres";
-import Image from "next/image";
 import BackButton from "@/src/common/back-button/BackButton";
 import React from "react";
 import {SubmitButton} from "./submit-button";
 import {revalidatePath} from "next/cache";
 
 export default async function Oppgave7(){
-    const { rows } = await sql`SELECT id, brand, image_url from cars`;
+    const { rows } = await sql`SELECT id, name from developers`;
 
     const handleSubmit = async (formData: FormData) => {
         'use server'
-        await sql`INSERT INTO cars (brand, image_url) VALUES (${formData.get('brand') as string}, ${formData.get('picture') as string})`
+        await sql`INSERT INTO developers (name) VALUES (${formData.get('name') as string})`
         revalidatePath('/oppgave7')
     }
 
@@ -21,15 +20,12 @@ export default async function Oppgave7(){
 
             {rows.map((row) => (
                 <div key={row.id}>
-                    {row.brand}
-                    <Image src={row.image_url} width={500} height={500} alt={`Image of ${row.brand} car`}/>
+                    {row.name}
                 </div>
             ))}
             <form>
-                <label htmlFor={'picture'}>Picture: </label>
-                <input type={'url'} name={'picture'} id={'picture'}/>
-                <label htmlFor={'brand'}>Brand: </label>
-                <input type={'text'} name={'brand'} id={'brand'}/>
+                <label htmlFor={'name'}>Developer name: </label>
+                <input type={'text'} name={'name'} id={'name'}/>
                 <SubmitButton formAction={handleSubmit}>Submit</SubmitButton>
             </form>
         </main>
