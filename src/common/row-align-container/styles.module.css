@@ -1,0 +1,14 @@
+.rowAlign {
+    display: flex;
+    gap: 2rem;
+    border-radius: 0.7rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0.9rem;
+
+    &.border {
+        padding: 1rem;
+        border: 2px solid #89ce7ecf;
+    }
+
+}
+

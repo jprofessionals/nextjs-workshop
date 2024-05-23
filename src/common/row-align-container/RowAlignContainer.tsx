@@ -1,24 +1,16 @@
 'use client';
 
-
+import styles from './styles.module.css'
 import {Component, ReactNode} from "react";
 
 export class RowAlignContainer extends Component<{ children: ReactNode, border: boolean }> {
 
     render() {
         const {children, border} = this.props;
+        const className = `${styles.rowAlign} ${border && styles.border}`;
 
         return (
-            <div style={
-                {
-                    display: "flex",
-                    gap: "2rem",
-                    border: border ? "2px solid #89ce7ecf" : "",
-                    padding: border ? "1rem" : "0.5rem 0.9rem",
-                    borderRadius: "0.7rem",
-                    flexWrap: "wrap",
-                }
-            }>
+            <div className={className}>
                 {children}
             </div>
         );
