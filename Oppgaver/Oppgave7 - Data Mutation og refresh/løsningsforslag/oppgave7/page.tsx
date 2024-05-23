@@ -1,12 +1,11 @@
 import { sql } from "@vercel/postgres";
-import Image from "next/image";
 import BackButton from "@/src/common/back-button/BackButton";
 import React from "react";
 import {SubmitButton} from "./submit-button";
 import {revalidatePath} from "next/cache";
 
 export default async function Oppgave7(){
-    const { rows } = await sql`SELECT id, brand from developers`;
+    const { rows } = await sql`SELECT id, name from developers`;
 
     const handleSubmit = async (formData: FormData) => {
         'use server'
