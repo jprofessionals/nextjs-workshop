@@ -12,8 +12,10 @@ https://nextjs.org/docs/app/building-your-application/styling
      - app/globals.css
      - app/layout.css 
    - Alle routes under app, vil arve disse stilene. 
-2. Definerer man en ny globals.css og layout.tsx for en komponent lenger ned i hierarkiet, Vil disse stilene gjelde/overstyre 
-   for alle komponenter under. 
+2. Definerer man en ny globals.css og layout.tsx for en komponent lenger ned i hierarkiet, Vil disse stilene overstyre 
+   for alle komponenter under i hierarkiet. 
+3. Har du laget en komponent som du vil style. Opprett en fil style.modules.css i komponenten og importer i page.tsx.
+   - referer så til stil-klassene i prop className der du ønsker å bruke stilen. 
 
 ## Oppgave
 1. CSS Modules 
@@ -33,8 +35,8 @@ https://nextjs.org/docs/app/building-your-application/styling
    - Importer style.module.css i app/oppgave8/page.css.
      - Endre på prop className, slik at dette elementet får stil fra både "workshop" og "workshopOverride".
    - Lag gjerne noen andre stiler også og ta de i bruk på diverse. 
-3. Det er også mulig å bruke inline-styling med style-prop. Test dette ut.
-   - <div style={{ backgroundColor: "blue"}}> Workshop stil</div>
+3. Det er også mulig å bruke inline-styling med style-prop. Test Feks dette ut.
+   - <div style={{ backgroundColor: "blue"}}> ... </div>
 
             
      

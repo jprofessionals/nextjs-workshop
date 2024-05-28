@@ -10,13 +10,10 @@ https://nextjs.org/docs/app/building-your-application/data-fetching/server-actio
 * Som standard er komponenter i nextjs Server Component.
   - Det ikke nødvendig å spesifisere ytterligere at dette skal være en Server Component.
   - Ettersom rendres server-side, har komponenten begrenset mulighet for bruker-interaksjon. Se dokumentasjon.
-* For anledningen har vi opprettet et Postgres-database "nextjs-workshop" på jpro sin Vercel-konto:
-   - https://vercel.com/jp-ro/~/stores
-   - Velg nextjs-workshop for ytterligere detaljer. 
-   - velg .env.local + show secret -> for å vise påloggingsinformasjon (filen .env.local kommer herfra).
+* Ref. Oppgave 5, skal vi også her gjøre en spørring mot database i jpro sin vercel-konto.
 
 ## Oppgave
-1. Lag en ny route app/oppgave7
+1. Lag en ny route app/oppgave7/page.tsx
 2. Denne route skal skrives som en Server Component
 3. For å select mot database i page.tsx:
     - import { sql } from "@vercel/postgres";

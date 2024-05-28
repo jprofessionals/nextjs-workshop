@@ -14,8 +14,8 @@ https://nextjs.org/docs/pages/api-reference/components/image
   - Bruk funskjonen "fetch" for å laste data. NB. denne returnerer en Promise. 
   - Nextjs har et alternativ til html-tagen <img/>. Dette er <Image/> og importeres med: import Image from "next/image"
     <Image/> har flere funksjoner, se dokumentasjon. Den gjør det feks mulig å forhåndsprosessere bildene og serve de
-    i en passende størrelse fra server, slik at man unngår unødvendig data-last til klient. Ettersom url til våre bilder 
-    peker på en ekstern kilde, må vi åpne for denne url i next.config.mjs -filen. 
+    i en passende størrelse fra server, slik at man unngår unødvendig data-last til klient. 
+  - Ettersom url til våre bilder peker på en ekstern kilde, må vi åpne for denne url i next.config.mjs -filen. 
 
 ## Oppgave 
 1. Opprett en ny route "app/oppgave4/page.txt".

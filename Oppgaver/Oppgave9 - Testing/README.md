@@ -6,7 +6,8 @@ https://nextjs.org/docs/app/building-your-application/testing/cypress
 
 ## Tips 
 - Det finnes flere test-rammeverk som fint kan benyttes med nextjs. Se dokumentasjon. 
-- I denne workshop, skal vi teste med Cypress. Cypress kan brukes til å skrive både ende-til-ende og komponent-tester 
+- I denne workshop, skal vi teste med Cypress. Cypress kan brukes til å skrive både ende-til-ende og komponent-tester.
+  I denne oppgave skal vi kun skrive en komponent-test. 
 - bruk prop "data-testid" som referanse til elementer som skal benyttes under testing.
   Man kan alltids bruke referanser til props som id eller stil-klasser også, men data-testid er 
   tydelig på hva den brukes til. Se eksempel i ReactComponentExample.tsx
