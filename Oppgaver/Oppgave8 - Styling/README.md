@@ -8,7 +8,7 @@ https://nextjs.org/docs/app/building-your-application/styling
    - https://nextjs.org/docs/app/building-your-application/styling/tailwind-css
    - De globale stilene er definert for app/page.tsx i globals.css og tatt i bruk via layout.tsx.
      Se filene:  
-     - config-filen tailwind.cofig.ts
+     - config-filen tailwind.config.ts
      - app/globals.css
      - app/layout.css 
    - Alle routes under app, vil arve disse stilene. 
@@ -36,7 +36,7 @@ https://nextjs.org/docs/app/building-your-application/styling
      - Endre på prop className, slik at dette elementet får stil fra både "workshop" og "workshopOverride".
    - Lag gjerne noen andre stiler også og ta de i bruk på diverse. 
 3. Det er også mulig å bruke inline-styling med style-prop. Test Feks dette ut.
-   - <div style={{ backgroundColor: "blue"}}> ... </div>
+   - <div style={{ backgroundColor: "blue"}}></div>
 
             
      
