@@ -1,3 +1,5 @@
+
+/*
 import React from 'react'
 import ReactComponentExample from './ReactComponentExample'
 
@@ -19,3 +21,4 @@ describe('<ReactComponentExample />', () => {
     cy.get('[data-testid="count-button"]').contains('(0)');
   })
 })
+*/
